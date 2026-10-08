@@ -1,0 +1,86 @@
+/* Product lookbook in the main banner. The pictures are the same garments shown in the catalog. */
+.shop-banner .banner-visual {
+  background: #ead8df;
+}
+.shop-banner .banner-visual[data-theme="cream"] {
+  background: #efe4dc;
+}
+.shop-banner .banner-visual[data-theme="sage"] {
+  background: #e0e6db;
+}
+.shop-banner .banner-stage {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+.shop-banner .banner-stage::before {
+  content: "";
+  position: absolute;
+  width: min(70%, 390px);
+  aspect-ratio: 1;
+  border: 1px solid #ffffffa8;
+  border-radius: 50%;
+  transform: translateY(-8%);
+}
+.shop-banner .banner-card {
+  position: absolute;
+  z-index: 1;
+  top: 18%;
+  width: min(27%, 160px);
+  height: min(230px, 58%);
+  margin: 0;
+  padding: 7px;
+  background: #fff;
+  border: 1px solid #fff;
+  box-shadow: 0 12px 25px #4b30301c;
+}
+.shop-banner .banner-card--left {
+  left: 7%;
+  transform: rotate(-6deg);
+}
+.shop-banner .banner-card--main {
+  top: 9%;
+  left: 50%;
+  width: min(43%, 245px);
+  height: min(295px, 70%);
+  z-index: 2;
+  transform: translateX(-50%) rotate(-1.5deg);
+  box-shadow: 0 17px 35px #4b303028;
+}
+.shop-banner .banner-card--right {
+  right: 7%;
+  transform: rotate(6deg);
+}
+.shop-banner .banner-visual .banner-card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  padding: 0;
+  background: #f3f3f3;
+  object-fit: contain;
+  object-position: center;
+}
+.shop-banner .banner-visual .banner-card img.is-changing {
+  opacity: .18;
+}
+@media (max-width: 700px) {
+  .shop-banner .banner-card--left,
+  .shop-banner .banner-card--right {
+    display: none;
+  }
+  .shop-banner .banner-card--main {
+    top: 8%;
+    width: min(78%, 185px);
+    height: 68%;
+    transform: translateX(-50%) rotate(-2deg);
+  }
+  .shop-banner>.banner-controls {
+    left: auto;
+    right: 10px;
+    bottom: 10px;
+    width: max-content;
+    gap: 6px;
+    padding: 5px 7px;
+  }
+}

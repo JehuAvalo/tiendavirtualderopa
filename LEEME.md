@@ -19,7 +19,7 @@ Las cuentas y pedidos están en las tablas `Customers`, `Orders` y `OrderItems`.
 
 ## Catálogo
 
-`catalog-seed.json` contiene las 30 prendas de demostración. Sus fotos están en `wwwroot/assets` y son ilustrativas, no inventario real. El banner usa `banner-girl.jpg`, `banner-floral.jpg` y `banner-casual.jpg`; el catálogo muestra únicamente prendas sin modelos. Las imágenes nuevas se crearon con ImageGen con fotografía de producto sobre fondo claro, sin texto ni logos. Sustituir fotos, descripciones, tallas y precios por los reales antes de publicar.
+`catalog-seed.json` contiene las 30 prendas de demostración. Sus fotos están en `wwwroot/assets` y son ilustrativas, no inventario real. El banner y el catálogo muestran únicamente prendas sin modelos; cada diapositiva del banner combina tres fotos del mismo catálogo. Las imágenes de producto se crearon con ImageGen sobre fondo claro, sin texto ni logos. Sustituir fotos, descripciones, tallas y precios por los reales antes de publicar.
 
 ## Pagos y operación
 
