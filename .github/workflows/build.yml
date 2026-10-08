@@ -1,0 +1,17 @@
+name: Compilar tienda
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+      - run: dotnet restore BabyGirlie.sln
+      - run: dotnet build BabyGirlie.sln --configuration Release --no-restore

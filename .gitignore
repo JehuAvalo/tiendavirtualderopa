@@ -1,0 +1,14 @@
+bin/
+obj/
+.vs/
+.vscode/
+*.user
+*.suo
+*.db
+*.mdf
+*.ldf
+appsettings.Development.json
+appsettings.Production.json
+vista-tienda.jpg
+*.publishsettings
+*.pubxml.user
