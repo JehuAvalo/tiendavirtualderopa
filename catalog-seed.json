@@ -11,7 +11,7 @@
       "6",
       "8"
     ],
-    "image": "assets/dress-1-only.png"
+    "image": "assets/dress-1-only.jpg"
   },
   {
     "id": "floral",
@@ -25,7 +25,7 @@
       "6",
       "8"
     ],
-    "image": "assets/dress-2-only.png"
+    "image": "assets/dress-2-only.jpg"
   },
   {
     "id": "perla",
@@ -39,7 +39,7 @@
       "6",
       "8"
     ],
-    "image": "assets/dress-3-only.png"
+    "image": "assets/dress-3-only.jpg"
   },
   {
     "id": "item-04",
@@ -53,7 +53,7 @@
       "6",
       "8"
     ],
-    "image": "assets/item-04.png"
+    "image": "assets/item-04.jpg"
   },
   {
     "id": "item-05",
@@ -67,7 +67,7 @@
       "6",
       "8"
     ],
-    "image": "assets/item-05.png"
+    "image": "assets/item-05.jpg"
   },
   {
     "id": "item-06",
@@ -81,7 +81,7 @@
       "6",
       "8"
     ],
-    "image": "assets/item-06.png"
+    "image": "assets/item-06.jpg"
   },
   {
     "id": "item-07",
@@ -95,7 +95,7 @@
       "6",
       "8"
     ],
-    "image": "assets/item-07.png"
+    "image": "assets/item-07.jpg"
   },
   {
     "id": "item-08",
@@ -109,7 +109,7 @@
       "6",
       "8"
     ],
-    "image": "assets/item-08.png"
+    "image": "assets/item-08.jpg"
   },
   {
     "id": "item-09",
@@ -123,7 +123,7 @@
       "6",
       "8"
     ],
-    "image": "assets/item-09.png"
+    "image": "assets/item-09.jpg"
   },
   {
     "id": "item-10",
@@ -137,7 +137,7 @@
       "6",
       "8"
     ],
-    "image": "assets/item-10.png"
+    "image": "assets/item-10.jpg"
   },
   {
     "id": "item-11",
@@ -151,7 +151,7 @@
       "6",
       "8"
     ],
-    "image": "assets/item-11.png"
+    "image": "assets/item-11.jpg"
   },
   {
     "id": "item-12",
@@ -165,7 +165,7 @@
       "6",
       "8"
     ],
-    "image": "assets/item-12.png"
+    "image": "assets/item-12.jpg"
   },
   {
     "id": "item-13",
@@ -179,7 +179,7 @@
       "6",
       "8"
     ],
-    "image": "assets/item-13.png"
+    "image": "assets/item-13.jpg"
   },
   {
     "id": "item-14",
@@ -193,7 +193,7 @@
       "6",
       "8"
     ],
-    "image": "assets/item-14.png"
+    "image": "assets/item-14.jpg"
   },
   {
     "id": "item-15",
@@ -207,7 +207,7 @@
       "6",
       "8"
     ],
-    "image": "assets/item-15.png"
+    "image": "assets/item-15.jpg"
   },
   {
     "id": "item-16",
@@ -221,7 +221,7 @@
       "6",
       "8"
     ],
-    "image": "assets/item-16.png"
+    "image": "assets/item-16.jpg"
   },
   {
     "id": "item-17",
@@ -235,7 +235,7 @@
       "6",
       "8"
     ],
-    "image": "assets/item-17.png"
+    "image": "assets/item-17.jpg"
   },
   {
     "id": "item-18",
@@ -249,7 +249,7 @@
       "6",
       "8"
     ],
-    "image": "assets/item-18.png"
+    "image": "assets/item-18.jpg"
   },
   {
     "id": "item-19",
@@ -263,7 +263,7 @@
       "6",
       "8"
     ],
-    "image": "assets/item-19.png"
+    "image": "assets/item-19.jpg"
   },
   {
     "id": "item-20",
@@ -277,7 +277,7 @@
       "6",
       "8"
     ],
-    "image": "assets/item-20.png"
+    "image": "assets/item-20.jpg"
   },
   {
     "id": "item-21",
@@ -291,7 +291,7 @@
       "6",
       "8"
     ],
-    "image": "assets/item-21.png"
+    "image": "assets/item-21.jpg"
   },
   {
     "id": "item-22",
@@ -305,7 +305,7 @@
       "6",
       "8"
     ],
-    "image": "assets/item-22.png"
+    "image": "assets/item-22.jpg"
   },
   {
     "id": "item-23",
@@ -319,7 +319,7 @@
       "6",
       "8"
     ],
-    "image": "assets/item-23.png"
+    "image": "assets/item-23.jpg"
   },
   {
     "id": "item-24",
@@ -333,7 +333,7 @@
       "6",
       "8"
     ],
-    "image": "assets/item-24.png"
+    "image": "assets/item-24.jpg"
   },
   {
     "id": "item-25",
@@ -347,7 +347,7 @@
       "6",
       "8"
     ],
-    "image": "assets/item-25.png"
+    "image": "assets/item-25.jpg"
   },
   {
     "id": "item-26",
@@ -361,7 +361,7 @@
       "6",
       "8"
     ],
-    "image": "assets/item-26.png"
+    "image": "assets/item-26.jpg"
   },
   {
     "id": "item-27",
@@ -375,7 +375,7 @@
       "6",
       "8"
     ],
-    "image": "assets/item-27.png"
+    "image": "assets/item-27.jpg"
   },
   {
     "id": "item-28",
@@ -389,7 +389,7 @@
       "6",
       "8"
     ],
-    "image": "assets/item-28.png"
+    "image": "assets/item-28.jpg"
   },
   {
     "id": "item-29",
@@ -403,7 +403,7 @@
       "6",
       "8"
     ],
-    "image": "assets/item-29.png"
+    "image": "assets/item-29.jpg"
   },
   {
     "id": "item-30",
@@ -417,6 +417,6 @@
       "6",
       "8"
     ],
-    "image": "assets/item-30.png"
+    "image": "assets/item-30.jpg"
   }
 ]
