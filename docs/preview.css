@@ -1,0 +1,28 @@
+/* Public design preview: the purchase and account flows live only in the full application. */
+header{min-height:92px}
+.shop-banner{min-height:385px;height:auto}
+.shop-banner .banner-visual{min-height:385px}
+.shop-banner .banner-copy{align-self:center}
+.shop-banner .banner-card img{max-width:none}
+.preview-about{background:#f0dce3;display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center;padding:55px max(5%,calc((100vw - 1188px)/2))}
+.preview-about h2{font-size:clamp(32px,3.4vw,46px)}
+.preview-about h2 em{color:var(--pink)}
+.preview-about>p{max-width:420px;color:#6c4b58;margin:0}
+.product-info p{margin:0 0 8px}
+.product-image{cursor:pointer}
+.preview-detail-category{font-size:12px;letter-spacing:.12em;color:var(--pink);font-weight:700;text-transform:uppercase;margin-bottom:12px}
+.preview-detail-sizes{margin-top:20px;font-size:14px;color:#795c67}
+.preview-detail-note{font-size:12px;color:#8b717b;border-top:1px solid #eadde2;padding-top:14px;margin-top:25px}
+@media(max-width:600px){
+  header{min-height:74px}
+  header nav a{display:block;font-size:12px;white-space:nowrap}
+  header nav a:last-child{display:none}
+  .shop-banner{min-height:315px}
+  .shop-banner .banner-visual{min-height:315px}
+  .shop-banner .banner-copy{align-self:stretch}
+  .shop-banner>.banner-controls{right:10px;bottom:10px}
+  .preview-about{grid-template-columns:1fr;gap:20px;padding:38px 6%}
+  .preview-about h2{font-size:30px}
+  .product-info h3{font-size:15px}
+  .product-info p{font-size:12px}
+}

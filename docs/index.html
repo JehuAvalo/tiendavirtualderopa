@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#b94368">
+  <title>Baby Girlie · Vista previa de la colección</title>
+  <meta name="description" content="Vista previa de la colección de ropa para niñas Baby Girlie.">
+  <link rel="icon" href="assets/logo.jpeg">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="catalog.css">
+  <link rel="stylesheet" href="banner-refresh.css">
+  <link rel="stylesheet" href="hero-products.css">
+  <link rel="stylesheet" href="preview.css">
+  <script src="preview.js" defer></script>
+</head>
+<body>
+  <div class="announcement">BABY GIRLIE · VISTA PREVIA DE LA COLECCIÓN</div>
+  <header>
+    <a class="brand" href="#inicio" aria-label="Baby Girlie, volver al inicio"><img src="assets/logo.jpeg" alt=""><span>baby <b>Girlie</b><small>TIENDITA VIRTUAL</small></span></a>
+    <nav aria-label="Navegación principal"><a href="#catalogo">Colección</a><a href="#sobre">Sobre esta vista</a></nav>
+  </header>
+  <main id="inicio">
+    <section class="shop-banner" aria-roledescription="carrusel" aria-label="Colección Baby Girlie">
+      <div class="banner-copy"><p class="eyebrow" id="banner-eyebrow">LA COLECCIÓN DE BABY GIRLIE</p><h1 id="banner-title">Ropa para<br><em>cada día.</em></h1><p id="banner-description">Vestidos, conjuntos y favoritos para combinar a su manera.</p><a class="button" href="#catalogo">Explorar colección</a></div>
+      <div class="banner-visual" data-theme="rose"><div class="banner-stage">
+        <figure class="banner-card banner-card--left"><img id="hero-left" src="assets/item-04.jpg" alt="Polo rosa con flor bordada"></figure>
+        <figure class="banner-card banner-card--main"><img id="hero-image" src="assets/dress-2-only.jpg" alt="Vestido floral para niña"></figure>
+        <figure class="banner-card banner-card--right"><img id="hero-right" src="assets/item-20.jpg" alt="Falda de denim con botones"></figure>
+      </div></div>
+      <div class="banner-controls" aria-label="Controles del banner"><button id="banner-prev" type="button" aria-label="Imagen anterior">‹</button><div id="banner-dots" class="banner-dots" aria-label="Elegir imagen"></div><button id="banner-next" type="button" aria-label="Imagen siguiente">›</button></div>
+    </section>
+    <section id="catalogo" class="catalog">
+      <p class="breadcrumb">Inicio / Niñas / <strong>Ropa para niñas</strong></p>
+      <div class="section-heading"><div><p class="eyebrow">BABY GIRLIE · NIÑAS</p><h2>Ropa para niñas</h2><p class="catalog-description">Prendas de todos los días y favoritos para ocasiones especiales.</p></div><span id="result-count" aria-live="polite"></span></div>
+      <div class="catalog-tools"><label class="search-field">Buscar una prenda<input id="catalog-search" type="search" placeholder="Nombre, estilo o detalle…"></label><label>Ordenar por<select id="catalog-sort"><option value="default">Destacados</option><option value="name">Nombre A–Z</option></select></label></div>
+      <div class="shop-layout">
+        <aside class="catalog-sidebar"><h3>Filtrar por</h3><fieldset><legend>Categoría</legend><div class="filters" aria-label="Filtrar ropa"><button class="active" data-filter="Todos" type="button">Toda la colección</button><button data-filter="Vestidos" type="button">Vestidos</button><button data-filter="Polos" type="button">Polos</button><button data-filter="Blusas" type="button">Blusas</button><button data-filter="Pantalones y shorts" type="button">Pantalones y shorts</button><button data-filter="Faldas" type="button">Faldas</button><button data-filter="Conjuntos" type="button">Conjuntos</button><button data-filter="Pijamas" type="button">Pijamas</button><button data-filter="Abrigos" type="button">Abrigos</button></div></fieldset><fieldset><legend>Talla</legend><select id="catalog-size" aria-label="Filtrar por talla"><option value="">Todas las tallas</option><option>2</option><option>4</option><option>6</option><option>8</option></select></fieldset><button id="clear-filters" class="clear-filters" type="button">Limpiar filtros</button></aside>
+        <div><p class="sample-note">Vista previa de diseño · Imágenes, modelos y tallas de demostración.</p><div id="products" class="grid" aria-live="polite"></div></div>
+      </div>
+    </section>
+    <section id="sobre" class="preview-about"><div><p class="eyebrow">UNA PRIMERA MIRADA</p><h2>Hecha para sus<br><em>pequeños grandes días.</em></h2></div><p>Explora el estilo de Baby Girlie y sus distintas categorías. Esta es una vista previa visual de la tienda; los productos definitivos se incorporarán más adelante.</p></section>
+  </main>
+  <footer><div class="footer-brand">baby <em>Girlie</em></div><p>Para los recuerdos más bonitos.</p><a href="#catalogo">Volver a la colección</a><small>© <span id="year"></span> Baby Girlie · Vista previa</small></footer>
+  <dialog id="detail" aria-labelledby="detail-title"><button class="close" id="detail-close" type="button" aria-label="Cerrar detalle">×</button><div id="detail-content"></div></dialog>
+</body>
+</html>
