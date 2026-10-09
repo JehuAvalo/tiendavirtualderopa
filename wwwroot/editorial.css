@@ -9,6 +9,7 @@ nav{gap:24px;font-size:13px;font-weight:700}nav a:hover,.text-link:hover{color:v
 .preview-ribbon{background:var(--pink);color:white;text-align:center;font-size:10px;font-weight:700;letter-spacing:.13em;padding:6px 12px}
 .shop-banner{max-width:1320px;margin:0 auto 14px;display:grid;grid-template-columns:2fr 1fr;gap:12px;height:500px;min-height:500px;background:none;box-shadow:none;overflow:visible}
 .shop-banner>div:first-child{grid-column:1;grid-row:1;background:var(--pink);border-radius:23px;padding:42px clamp(34px,4vw,62px) 48px;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;color:#fff}
+.shop-banner .banner-copy{align-self:stretch}
 .shop-banner .eyebrow{color:#fff;font-size:12px;letter-spacing:.09em;margin-bottom:auto}
 .shop-banner h1{font:800 clamp(48px,5.8vw,80px)/.99 'DM Sans',Arial,sans-serif;letter-spacing:-.075em;color:#fff;max-width:650px;margin:0 0 20px}
 .shop-banner h1 em{font-style:normal;font-weight:800;color:#fff}
