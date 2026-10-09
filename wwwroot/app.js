@@ -24,7 +24,7 @@ fetch('/api/products').then(r=>{if(!r.ok)throw Error();return r.json()}).then(da
 
 
 const bannerSlides=[
- {theme:'rose',main:['assets/dress-2-only.jpg','Vestido floral para niña'],left:['assets/item-04.jpg','Polo rosa con flor bordada'],right:['assets/item-20.jpg','Falda de denim con botones'],eyebrow:'LA COLECCIÓN DE BABY GIRLIE',title:'Ropa para<br><em>cada día.</em>',description:'Vestidos, conjuntos y favoritos para combinar a su manera.'},
+ {theme:'rose',main:['assets/dress-2-only.jpg','Vestido floral para niña'],left:['assets/item-04.jpg','Polo rosa con flor bordada'],right:['assets/item-20.jpg','Falda de denim con botones'],eyebrow:'LA COLECCIÓN DE BABY GIRLIE',title:'Ropa para<br><em>cada aventura.</em>',description:'Prendas suaves, colores alegres y mucha libertad para jugar.'},
  {theme:'cream',main:['assets/dress-1-only.jpg','Vestido rosa de tul con lazo'],left:['assets/dress-2-only.jpg','Vestido floral para niña'],right:['assets/dress-3-only.jpg','Vestido bordado marfil'],eyebrow:'PARA SUS DÍAS ESPECIALES',title:'Un vestido<br><em>para recordar.</em>',description:'Modelos para celebrar esos momentos que se guardan siempre.'},
  {theme:'sage',main:['assets/item-24.jpg','Conjunto verde de blusa y short'],left:['assets/item-25.jpg','Conjunto amarillo de cuadros'],right:['assets/item-23.jpg','Conjunto deportivo rosa'],eyebrow:'COMODIDAD QUE ACOMPAÑA',title:'Lista para<br><em>salir a jugar.</em>',description:'Conjuntos cómodos, alegres y fáciles de llevar.'}
 ];
@@ -42,3 +42,10 @@ $('account-button').onclick=showAccount;$('login-tab').onclick=()=>setAccountMod
 $('account-form').onsubmit=async e=>{e.preventDefault();const form=new FormData(e.target),button=$('account-submit');button.disabled=true;$('account-error').hidden=true;try{const response=await fetch('/api/account/'+(accountMode==='login'?'login':'register'),{method:'POST',headers:{'Content-Type':'application/json'},credentials:'same-origin',body:JSON.stringify({email:form.get('email'),password:form.get('password')})});const data=await response.json();if(!response.ok)throw Error(data.error||'No se pudo entrar. Inténtalo nuevamente.');setAccount(data);$('account-form').reset();$('account').close();if(purchasePending){purchasePending=false;openCart()}else toast('Sesión iniciada')}catch(error){$('account-error').textContent=error.message;$('account-error').hidden=false}finally{button.disabled=false}};
 $('logout-button').onclick=async()=>{try{const response=await fetch('/api/account/logout',{method:'POST',credentials:'same-origin'});if(!response.ok)throw Error();setAccount(null);$('account').close();toast('Sesión cerrada')}catch{toast('No se pudo cerrar sesión')}};
 fetch('/api/account/me',{credentials:'same-origin'}).then(r=>r.ok?r.json():null).then(data=>setAccount(data)).catch(()=>setAccount(null));
+
+document.querySelectorAll('[data-category-link]').forEach(link=>link.addEventListener('click',()=>{
+  const category=link.dataset.categoryLink;
+  const button=[...document.querySelectorAll('[data-filter]')].find(item=>item.dataset.filter===category);
+  if(button)button.click();
+}));
+document.querySelectorAll('[data-featured-id]').forEach(button=>button.addEventListener('click',()=>showProduct(button.dataset.featuredId)));

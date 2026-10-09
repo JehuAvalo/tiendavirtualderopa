@@ -1,5 +1,5 @@
 const slides = [
-  { theme: 'rose', main: ['assets/dress-2-only.jpg', 'Vestido floral para niña'], left: ['assets/item-04.jpg', 'Polo rosa con flor bordada'], right: ['assets/item-20.jpg', 'Falda de denim con botones'], eyebrow: 'LA COLECCIÓN DE BABY GIRLIE', title: 'Ropa para<br><em>cada día.</em>', description: 'Vestidos, conjuntos y favoritos para combinar a su manera.' },
+  { theme: 'rose', main: ['assets/dress-2-only.jpg', 'Vestido floral para niña'], left: ['assets/item-04.jpg', 'Polo rosa con flor bordada'], right: ['assets/item-20.jpg', 'Falda de denim con botones'], eyebrow: 'LA COLECCIÓN DE BABY GIRLIE', title: 'Ropa para<br><em>cada aventura.</em>', description: 'Prendas suaves, colores alegres y mucha libertad para jugar.' },
   { theme: 'cream', main: ['assets/dress-1-only.jpg', 'Vestido rosa de tul con lazo'], left: ['assets/dress-2-only.jpg', 'Vestido floral para niña'], right: ['assets/dress-3-only.jpg', 'Vestido bordado marfil'], eyebrow: 'PARA SUS DÍAS ESPECIALES', title: 'Un vestido<br><em>para recordar.</em>', description: 'Modelos para celebrar esos momentos que se guardan siempre.' },
   { theme: 'sage', main: ['assets/item-24.jpg', 'Conjunto verde de blusa y short'], left: ['assets/item-25.jpg', 'Conjunto amarillo de cuadros'], right: ['assets/item-23.jpg', 'Conjunto deportivo rosa'], eyebrow: 'COMODIDAD QUE ACOMPAÑA', title: 'Lista para<br><em>salir a jugar.</em>', description: 'Conjuntos cómodos, alegres y fáciles de llevar.' }
 ];
@@ -117,6 +117,14 @@ async function init() {
     selectedCategory = button.dataset.filter;
     document.querySelectorAll('[data-filter]').forEach((other) => other.classList.toggle('active', other === button));
     renderCatalog();
+  }));
+  document.querySelectorAll('[data-category-link]').forEach((link) => link.addEventListener('click', () => {
+    const button = [...document.querySelectorAll('[data-filter]')].find((item) => item.dataset.filter === link.dataset.categoryLink);
+    if (button) button.click();
+  }));
+  document.querySelectorAll('[data-featured-id]').forEach((button) => button.addEventListener('click', () => {
+    const item = products.find((product) => product.id === button.dataset.featuredId);
+    if (item) openDetail(item);
   }));
   for (const selector of ['#catalog-search', '#catalog-size', '#catalog-sort']) $(selector).addEventListener('input', renderCatalog);
   $('#clear-filters').addEventListener('click', () => {
